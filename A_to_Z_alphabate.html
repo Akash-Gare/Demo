@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function apple() {
+      document.getElementById("color").style.backgroundColor = "red";
+      document.getElementById("data").innerHTML = "APPLE";
+      let a = document.getElementById("apple");
+      a.play();
+    }
+
+    function ball() {
+      document.getElementById("color").style.backgroundColor = "pink";
+      document.getElementById("data").innerHTML = "BALL";
+    }
+
+    function cat() {
+      document.getElementById("color").style.backgroundColor = "orange";
+      document.getElementById("data").innerHTML = "CAT";
+    }
+
+    function dog() {
+      document.getElementById("color").style.backgroundColor = "yellow";
+      document.getElementById("data").innerHTML = "DOG";
+    }
+
+    function elephant() {
+      document.getElementById("color").style.backgroundColor = "gray";
+      document.getElementById("data").innerHTML = "ELEPHANT";
+    }
+
+    function fish() {
+      document.getElementById("color").style.backgroundColor = "orange";
+      document.getElementById("data").innerHTML = "FISH";
+    }
+
+    function goat() {
+      document.getElementById("color").style.backgroundColor = "pink";
+      document.getElementById("data").innerHTML = "GOAT";
+    }
+
+    function house() {
+      document.getElementById("color").style.backgroundColor = "pink";
+      document.getElementById("data").innerHTML = "HOUSE";
+    }
+
+    function ice() {
+      document.getElementById("color").style.backgroundColor = "brown";
+      document.getElementById("data").innerHTML = "ICE-CREAM";
+    }
+
+    function jug() {
+      document.getElementById("color").style.backgroundColor = "orange";
+      document.getElementById("data").innerHTML = "JUG";
+    }
+
+    function kite() {
+      document.getElementById("color").style.backgroundColor = "yellow";
+      document.getElementById("data").innerHTML = "KITE";
+    }
+
+    function lion() {
+      document.getElementById("color").style.backgroundColor = "yellow";
+      document.getElementById("data").innerHTML = "LION";
+    }
+
+    function mango() {
+      document.getElementById("color").style.backgroundColor = "yellow";
+      document.getElementById("data").innerHTML = "MANGO";
+    }
+
+    function nest() {
+      document.getElementById("color").style.backgroundColor = "green";
+      document.getElementById("data").innerHTML = "NEST";
+    }
+
+    function orange() {
+      document.getElementById("color").style.backgroundColor = "orange";
+      document.getElementById("data").innerHTML = "ORANGE";
+    }
+
+    function parrot() {
+      document.getElementById("color").style.backgroundColor = "green";
+      document.getElementById("data").innerHTML = "PARROT";
+    }
+
+    function queen() {
+      document.getElementById("color").style.backgroundColor = "pink";
+      document.getElementById("data").innerHTML = "QUEEN";
+    }
+
+    function rabbit() {
+      document.getElementById("color").style.backgroundColor = "orange";
+      document.getElementById("data").innerHTML = "RABBIT";
+    }
+
+    function ship() {
+      document.getElementById("color").style.backgroundColor = "yellow";
+      document.getElementById("data").innerHTML = "SHIP";
+    }
+
+    function tiger() {
+      document.getElementById("color").style.backgroundColor = "gray";
+      document.getElementById("data").innerHTML = "TIGER";
+    }
+
+    function umbrella() {
+      document.getElementById("color").style.backgroundColor = "orange";
+      document.getElementById("data").innerHTML = "UMBRELLA";
+    }
+
+    function van() {
+      document.getElementById("color").style.backgroundColor = "pink";
+      document.getElementById("data").innerHTML = "VAN";
+    }
+
+    function watch() {
+      document.getElementById("color").style.backgroundColor = "pink";
+      document.getElementById("data").innerHTML = "WATCH";
+    }
+
+    function xrays() {
+      document.getElementById("color").style.backgroundColor = "brown";
+      document.getElementById("data").innerHTML = "X-RAYS";
+    }
+
+    function yak() {
+      document.getElementById("color").style.backgroundColor = "pink";
+      document.getElementById("data").innerHTML = "YAK";
+    }
+
+    function zebra() {
+      document.getElementById("color").style.backgroundColor = "brown";
+      document.getElementById("data").innerHTML = "ZEBRA";
+    }
+  </script>
+  <style>
+    .container {
+      margin: 2%;
+      width: 1050px;
+      height: 500px;
+    }
+
+    body {
+      background-color: #197181;
+    }
+
+    .jumbotron {
+      border: 4px solid black;
+      background-image: linear-gradient(to bottom right, rgb(125, 169, 217), white);
+    }
+
+    .card-img-top:hover {
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+
+    .col-sm-2 {
+      border: 5px solid rgb(77, 177, 239);
+      margin: 2%;
+      margin-left: 1%;
+      padding-bottom: 0.2%;
+      background-color: bisque;
+      background-image: linear-gradient(to bottom right, rgb(125, 169, 217), white);
+    }
+  </style>
+</head>
+<body>
+
+<div id="color" class="jumbotron text-center">
+  <h1 id="data">Your Alphabet Name Will Be Here</h1>
+</div>
+<center>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img src="img/apple.png" height="100px" width="100px" class="card-img-top" alt="Apple">
+          <div class="card-body">
+            <h2 class="card-title"><b>A</b></h2>
+            <audio id="apple">
+              <source src="audio/a-is-for-apple-84435.mp3" type="audio/mpeg">
+            </audio>
+            <input type="button" class="btn btn-primary" onclick="apple()" value="A for Apple">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/beach-ball.png" alt="Ball">
+          <div class="card-body">
+            <h2 class="card-title"><b>B</b></h2>
+            <input type="button" class="btn btn-primary" onclick="ball()" value="B for Ball">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/cat.png" alt="Cat">
+          <div class="card-body">
+            <h2 class="card-title"><b>C</b></h2>
+            <input type="button" class="btn btn-primary" onclick="cat()" value="C for Cat">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/dog.png" alt="Dog">
+          <div class="card-body">
+            <h2 class="card-title"><b>D</b></h2>
+            <input type="button" class="btn btn-primary" onclick="dog()" value="D for Dog">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img src="img/elephant.png" height="100px" width="100px" class="card-img-top" alt="Elephant">
+          <div class="card-body">
+            <h2 class="card-title"><b>E</b></h2>
+            <input type="button" class="btn btn-primary" onclick="elephant()" value="E for Elephant">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/fish.png" alt="Fish">
+          <div class="card-body">
+            <h2 class="card-title"><b>F</b></h2>
+            <input type="button" class="btn btn-primary" onclick="fish()" value="F for Fish">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/goat.png" alt="Goat">
+          <div class="card-body">
+            <h2 class="card-title"><b>G</b></h2>
+            <input type="button" class="btn btn-primary" onclick="goat()" value="G for Goat">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/house.png" alt="House">
+          <div class="card-body">
+            <h2 class="card-title"><b>H</b></h2>
+            <input type="button" class="btn btn-primary" onclick="house()" value="H for House">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/ice-cream.png" alt="Ice-cream">
+          <div class="card-body">
+            <h2 class="card-title"><b>I</b></h2>
+            <input type="button" class="btn btn-primary" onclick="ice()" value="I for Ice-Cream">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/jug.png" alt="Jug">
+          <div class="card-body">
+            <h2 class="card-title"><b>J</b></h2>
+            <input type="button" class="btn btn-primary" onclick="jug()" value="J for Jug">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/kite.png" alt="Kite">
+          <div class="card-body">
+            <h2 class="card-title"><b>K</b></h2>
+            <input type="button" class="btn btn-primary" onclick="kite()" value="K for Kite">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/lion.png" alt="Lion">
+          <div class="card-body">
+            <h2 class="card-title"><b>L</b></h2>
+            <input type="button" class="btn btn-primary" onclick="lion()" value="L for Lion">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/mango.png" alt="Mango">
+          <div class="card-body">
+            <h2 class="card-title"><b>M</b></h2>
+            <input type="button" class="btn btn-primary" onclick="mango()" value="M for Mango">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/nest.png" alt="Nest">
+          <div class="card-body">
+            <h2 class="card-title"><b>N</b></h2>
+            <input type="button" class="btn btn-primary" onclick="nest()" value="N for Nest">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/orange.png" alt="Orange">
+          <div class="card-body">
+            <h2 class="card-title"><b>O</b></h2>
+            <input type="button" class="btn btn-primary" onclick="orange()" value="O for Orange">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/parrot.png" alt="Parrot">
+          <div class="card-body">
+            <h2 class="card-title"><b>P</b></h2>
+            <input type="button" class="btn btn-primary" onclick="parrot()" value="P for Parrot">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/queen.png" alt="Queen">
+          <div class="card-body">
+            <h2 class="card-title"><b>Q</b></h2>
+            <input type="button" class="btn btn-primary" onclick="queen()" value="Q for Queen">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/rabbit.png" alt="Rabbit">
+          <div class="card-body">
+            <h2 class="card-title"><b>R</b></h2>
+            <input type="button" class="btn btn-primary" onclick="rabbit()" value="R for Rabbit">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/ship.png" alt="Ship">
+          <div class="card-body">
+            <h2 class="card-title"><b>S</b></h2>
+            <input type="button" class="btn btn-primary" onclick="ship()" value="S for Ship">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/big.png" alt="Tiger">
+          <div class="card-body">
+            <h2 class="card-title"><b>T</b></h2>
+            <input type="button" class="btn btn-primary" onclick="tiger()" value="T for Tiger">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/umbrella.png" alt="Umbrella">
+          <div class="card-body">
+            <h2 class="card-title"><b>U</b></h2>
+            <input type="button" class="btn btn-primary" onclick="umbrella()" value="U for Umbrella">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/van.png" alt="Van">
+          <div class="card-body">
+            <h2 class="card-title"><b>V</b></h2>
+            <input type="button" class="btn btn-primary" onclick="van()" value="V for Van">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/wrist-watch.png" alt="Watch">
+          <div class="card-body">
+            <h2 class="card-title"><b>W</b></h2>
+            <input type="button" class="btn btn-primary" onclick="watch()" value="W for Watch">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/x-rays.png" alt="Xylophone">
+          <div class="card-body">
+            <h2 class="card-title"><b>X</b></h2>
+            <input type="button" class="btn btn-primary" onclick="xrays()" value="X for Xylophone">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/yak.png" alt="Yak">
+          <div class="card-body">
+            <h2 class="card-title"><b>Y</b></h2>
+            <input type="button" class="btn btn-primary" onclick="yak()" value="Y for Yak">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" height="100px" width="100px" src="img/mammal.png" alt="Zebra">
+          <div class="card-body">
+            <h2 class="card-title"><b>Z</b></h2>
+            <input type="button" class="btn btn-primary" onclick="zebra()" value="Z for Zebra">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+</body>
+</html>
